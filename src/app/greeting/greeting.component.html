@@ -1,0 +1,5 @@
+<h1 *ngIf="personInfo.name">Hello {{ personInfo.name }}!!</h1>
+<h1 *ngIf="!personInfo.name">Hello my friend!</h1>
+<p>You are person number {{ index + 1 }}</p>
+<p *ngIf="personInfo.numberOfMessages > 0">You have {{ personInfo.numberOfMessages }} messages</p>
+<button (click)="onButtonClicked(personInfo.name)">Select person</button>
