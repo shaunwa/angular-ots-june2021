@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { ArticlesPageComponent } from './articles-page/articles-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { ArticleDetailPageComponent } from './article-detail-page/article-detail-page.component';
+import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { ArticleDetailPageComponent } from './article-detail-page/article-detail
     ArticlesPageComponent,
     NavBarComponent,
     NotFoundPageComponent,
-    ArticleDetailPageComponent
+    ArticleDetailPageComponent,
+    SignUpFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+	FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
